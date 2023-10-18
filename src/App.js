@@ -70,6 +70,26 @@ function App() {
     });
   };
 
+  // const handleDocketSubmit = () => {
+  //   if (selectedSupplier && selectedPurchaseOrder) {
+  //     const selectedData = csvData.find(
+  //       (item) =>
+  //         item["Supplier"] === selectedSupplier.value &&
+  //         item["PO Number"] === selectedPurchaseOrder.value
+  //     );
+
+  //     if (selectedData) {
+  //       const newDocket = {
+  //         Supplier: selectedSupplier.label,
+  //         purchaseOrder: selectedPurchaseOrder.label,
+  //         purchaseOrderNumber: selectedData["PO Number"],
+  //         Description: selectedData["Description"],
+  //         ...formFields, // Include all form fields
+  //       };
+  //       setDockets([...dockets, newDocket]);
+  //     }
+  //   }
+  // };
   const handleDocketSubmit = () => {
     if (selectedSupplier && selectedPurchaseOrder) {
       const selectedData = csvData.find(
@@ -87,9 +107,19 @@ function App() {
           ...formFields, // Include all form fields
         };
         setDockets([...dockets, newDocket]);
+
+        // Clear the form fields
+        setFormFields({
+          name: "",
+          startTime: "",
+          endTime: "",
+          hoursWorked: "",
+          ratePerHour: "",
+        });
       }
     }
   };
+
 
   return (
     <div>
