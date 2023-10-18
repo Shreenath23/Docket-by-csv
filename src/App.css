@@ -1,0 +1,70 @@
+
+.app-container {
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for form fields (labels and input fields) */
+.form-field {
+  margin: 10px 0;
+}
+
+/* Style for labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style for input fields and selects */
+input[type="text"] {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for the submit button */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the docket list */
+.docket-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style for each docket item */
+.docket-item {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f7f7f7;
+}
+
+/* Style for strong elements within docket items */
+.docket-item strong {
+  display: block;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.docket {
+  max-width: 90%;
+  /* max-width: 600px; */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
